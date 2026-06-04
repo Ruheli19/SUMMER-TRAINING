@@ -1,10 +1,9 @@
 
-#reverse a number
-num = int(input("enter a number:"))
-rev = 0
-while num > 0:
-    rem = num % 10
-    rev = rev * 10 + rem
-    num = num//10
-    print("reverse the number is:",rev)
-
+#find product of digits
+n = int(input("enter a number:"))
+product = 1
+while n > 0:
+    digit = n % 10
+    product = product * digit
+    n = n//10
+print("product of digits =",product)
