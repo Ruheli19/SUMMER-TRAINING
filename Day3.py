@@ -1,13 +1,11 @@
 
-#generate fibonacci series
-n = int(input("enter the number of terms:"))
+#find nth fibonacci term
+n=int(input("enter the term number: "))
 a=0
 b=1
-i=1
-while i<=n:
-    print(a,end=" ")
+for i in range(n-1):
     c=a+b
     a=b
     b=c
-    i+=1
+    print(c)
     
