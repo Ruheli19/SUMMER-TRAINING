@@ -1,8 +1,10 @@
 
-#to count set bits in a number
-n = int(input("Enter a number: "))
-count = 0
-while n > 0:
-    count += n & 1
-    n >>= 1
-print("Number of set bits:", count)
+#to find x^n without pow()
+x = int(input("Enter the value of x: "))
+n = int(input("Enter the value of n: "))
+result = 1
+for i in range(n):
+    result =result*x
+    print("answer=", result)
+     
+
