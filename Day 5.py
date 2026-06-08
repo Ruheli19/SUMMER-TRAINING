@@ -1,7 +1,8 @@
 
-#convert binary to decimal
-n = input("Enter a binary number: ")
-decimal = 0
-for digit in n:
-    decimal = decimal * 2 + int(digit)
-print("decimal number =", decimal)
+#to count set bits in a number
+n = int(input("Enter a number: "))
+count = 0
+while n > 0:
+    count += n & 1
+    n >>= 1
+print("Number of set bits:", count)
