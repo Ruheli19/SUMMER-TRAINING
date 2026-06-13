@@ -1,6 +1,9 @@
 
-#write function to find sum of two numbers
-def add(a,b):
-    print("sum=",a+b)
-    add(40+30);
-    
+#to write function to find maximum
+def maximum(a,b):
+    if a>b:
+        print("maximum=",a)
+    else:
+        print("maximum=",b)
+        x=int(input("enter first number:"))
+        y=int(input("enter second number:"))
